@@ -1,0 +1,370 @@
+:root {
+  --swiper-theme-color: #E60012;
+}
+
+body{
+  width: 100%;
+  max-width: 1920px;
+  margin: auto;
+}
+
+.topBanner{
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  background: #000;
+}
+
+.Nav{
+  width: 100%;
+  height: 100px;
+  background: #fff;
+  box-shadow: 0 2px 20px  rgba(58, 58, 58, 0.068);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 20;
+}
+
+.logo{width: 20%;}
+
+.logo>img{
+  width: 13.333rem;
+  height: 1.467rem;
+  display: inline-block;
+  margin: auto;
+}
+
+.Nav>ul{width: 60%;}
+
+.Nav>ul>li{
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 2.5rem;
+}
+
+.Nav>ul>li a{transition: .3s;}
+
+.Nav>ul>li:hover a{color: #E60012;}
+
+.Nav>ul>li:last-child{margin-right: 0;}
+
+.User{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.User>p{
+  margin: 0;
+  font-weight: 600;
+  }
+
+.Search{display: flex;}
+
+.Search>img{margin-left: -1.5rem;}
+
+.Search>input{
+  border-radius: 5px;
+  border: 1px solid rgb(182, 181, 181);
+  padding: 0.2rem 0.2rem 0.2rem 0.6rem;
+  outline: none;
+}
+
+/* Product */
+.ProductAll{
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+/* MainVisual */
+.MainVisual{
+  width: 100%;
+  margin-bottom: 4.5rem;
+}
+
+.ProductInner{
+  width: 100%;
+  max-width: 1300px;
+  margin:auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.ProductCard{
+  width: 24%;
+  margin-bottom: 3rem;
+}
+
+.ProductCard img{width: 100%;}
+
+.SubTitle{
+  font-size: 11px;
+  font-weight: 600;
+  margin-top: 0.7rem;
+}
+
+.Title{
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.Price{
+  font-size: 13px;
+  font-weight: 300;
+  color: #4D4D4D;
+  margin-top: 0.2rem;
+}
+
+/* footer */
+.Footer{
+  height: 195px;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.4rem;
+  text-align: center;
+  background: #F6F6F6;
+  padding-top: 3.5rem;
+}
+
+/* login */
+.Login{
+  width: 100%;
+  max-width: 500px;
+  margin: 6rem auto 10.5rem;
+}
+
+.Login h3{
+  height: 55px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 55px;
+  text-align: center;
+  color: white;
+  border-radius: 0.3rem;
+  background: #272727;
+}
+
+.Login form{
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+input[type='email'],
+input[type='password']{
+  width: 100%;
+  padding: 0.5rem 0;
+  border: none;
+  color: #9A9A9A;
+  border-bottom: 1px solid #a7a7a7;
+}
+
+.checkBox{
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+  margin-top: 0.7rem;
+}
+
+.loginBtn{
+  width: 100%;
+  height: 53px;
+  font-weight: 600;
+  border-radius: 0.3rem;
+  background: #FBFBFB;
+  margin-top: 4.5rem;
+  transition: .3s;
+}
+
+.loginBtn:hover{
+  color: white;
+  background: #E60012;
+}
+
+/* ProductDetail */
+
+.ProductDetail{
+  width: 100%;
+  max-width: 1300px;
+  margin: 6rem auto 10.5rem;
+}
+
+.detail{
+  display: flex;
+  gap: 3rem;
+}
+
+.detail_left{
+  min-width: 284px;
+}
+
+.detail_right>h2{
+  margin-bottom: 2rem;
+  font-size: 30px;
+  line-height: 2rem;
+  font-weight: 600;
+}
+
+.goods_desc>h3{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.goods_desc>h4{
+  font-size: 20px;
+  line-height: 2rem;
+  font-weight: 300;
+}
+
+.goods_desc>select{
+  width: 40%;
+  padding: 0.2rem 0.3rem;
+  margin: 0.6rem 0 3rem;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+}
+
+.detail_right>button{
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.3rem;
+  font-weight: 500;
+  color: white;
+  background: #000;
+  transition: .5s;
+}
+
+.detail_right>button:hover{
+  background: #E60012;
+}
+
+/* 반응형 */
+@media screen and (max-width: 1285px) {
+  .Nav{
+    width: 100%;
+    margin: auto;
+  }
+
+  .Nav>ul{
+    width: 50%;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .Nav>ul>li{
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 1.5rem;
+  }
+
+  .logo{
+    width: 30%;
+    height: 4rem;
+    line-height: 4.6rem;
+  }
+
+  .User{width: 20%; }
+
+  .login{display: none;}
+
+  .Search>input{width: 90%;}
+
+  .ProductInner{
+    width: 80%;
+  }
+
+  .ProductDetail{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 895px) {
+  /* 화면 너비가 768px 이하인 경우에만 적용되는 스타일 */
+  .topBanner{
+    height: 43px;
+    line-height: 43px;
+    font-size: 13px;
+  }
+
+  .Nav{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .Nav>ul{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+  }
+  
+  .Nav>ul>li{
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 1.5rem;
+  }
+
+  .logo{
+    width: 100%;
+    height: 3.5rem;
+    line-height: 4.6rem;
+  }
+
+  .User{display: none;}
+
+  /* Product */
+  .ProductAll{margin-bottom: 80px;}
+
+  .ProductCard{
+    width: 49%;
+    margin-bottom: 0;
+  }
+  
+  /* Footer */
+  .Footer{
+    text-align: left;
+    padding: 2.5rem 2rem 2rem 2rem;
+    color: #fff;
+    background: #4D4D4D;
+  }
+}
+
+@media screen and (max-width: 579px) {
+  .ProductAll{margin-bottom: 40px;}
+
+  .ProductCard{
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .Login{
+    width: 80%;
+    margin-bottom: 6rem;
+  }
+
+  .detail{flex-direction: column;}
+  
+  .goods_desc>select{
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0.3rem;
+    margin: 1.8rem 0 0.8rem;
+  }
+  
+  .detail_right>button{
+    width: 100%;
+    height: 3rem;
+  }
+  
+}
+
